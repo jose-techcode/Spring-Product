@@ -1,0 +1,103 @@
+= API REST
+
+== Endpoints
+
+=== GetAll
+
+==== Curl
+include::target/generated-snippets/product-GetAll/curl-request.adoc[]
+
+==== Http Request
+include::target/generated-snippets/product-GetAll/http-request.adoc[]
+
+==== Http Response
+include::target/generated-snippets/product-GetAll/http-response.adoc[]
+
+==== Httpie Request
+include::target/generated-snippets/product-GetAll/httpie-request.adoc[]
+
+==== Request Body
+include::target/generated-snippets/product-GetAll/request-body.adoc[]
+
+==== Response Body
+include::target/generated-snippets/product-GetAll/response-body.adoc[]
+
+=== GetById
+
+==== Curl
+include::target/generated-snippets/product-GetById/curl-request.adoc[]
+
+==== Http Request
+include::target/generated-snippets/product-GetById/http-request.adoc[]
+
+==== Http Response
+include::target/generated-snippets/product-GetById/http-response.adoc[]
+
+==== Httpie Request
+include::target/generated-snippets/product-GetById/httpie-request.adoc[]
+
+==== Request Body
+include::target/generated-snippets/product-GetById/request-body.adoc[]
+
+==== Response Body
+include::target/generated-snippets/product-GetById/response-body.adoc[]
+
+=== Create
+
+==== Curl
+include::target/generated-snippets/product-Create/curl-request.adoc[]
+
+==== Http Request
+include::target/generated-snippets/product-Create/http-request.adoc[]
+
+==== Http Response
+include::target/generated-snippets/product-Create/http-response.adoc[]
+
+==== Httpie Request
+include::target/generated-snippets/product-Create/httpie-request.adoc[]
+
+==== Request Body
+include::target/generated-snippets/product-Create/request-body.adoc[]
+
+==== Response Body
+include::target/generated-snippets/product-Create/response-body.adoc[]
+
+=== Update
+
+==== Curl
+include::target/generated-snippets/product-Update/curl-request.adoc[]
+
+==== Http Request
+include::target/generated-snippets/product-Update/http-request.adoc[]
+
+==== Http Response
+include::target/generated-snippets/product-Update/http-response.adoc[]
+
+==== Httpie Request
+include::target/generated-snippets/product-Update/httpie-request.adoc[]
+
+==== Request Body
+include::target/generated-snippets/product-Update/request-body.adoc[]
+
+==== Response Body
+include::target/generated-snippets/product-Update/response-body.adoc[]
+
+=== Delete
+
+==== Curl
+include::target/generated-snippets/product-Delete/curl-request.adoc[]
+
+==== Http Request
+include::target/generated-snippets/product-Delete/http-request.adoc[]
+
+==== Http Response
+include::target/generated-snippets/product-Delete/http-response.adoc[]
+
+==== Httpie Request
+include::target/generated-snippets/product-Delete/httpie-request.adoc[]
+
+==== Request Body
+include::target/generated-snippets/product-Delete/request-body.adoc[]
+
+==== Response Body
+include::target/generated-snippets/product-Delete/response-body.adoc[]
