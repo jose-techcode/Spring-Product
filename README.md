@@ -5,10 +5,11 @@ The Spring Product is a project that trains CRUD and API RESTful operations with
 # 2. Technologies
 
 - Language: Java (25+)
-- Database: H2 (2.4+)
 - Dependency Manager: Maven (3.9+)
-- Frameworks: Spring Boot with JPA (4.0.2+) and JUnit (6+)
+- Frameworks: Spring Boot (4.0.2+) & JUnit (6+)
 - Library: Mockito (5.21.0+)
+- Database: PostgreSQL (18.1+) & PgAdmin (4+)
+- API REST Client: Postman (11.83.2+)
 - Code Versioning: Git (2.53.0+)
 - CI/CD: Github Actions
 
@@ -18,17 +19,13 @@ The Spring Product is a project that trains CRUD and API RESTful operations with
 
 `git clone https://github.com/jose-techcode/Spring-Product`
 
-# 4. Setting Environment Variables
-
-Create a file called .env in the project root and add your database username:
-
-`DB_USERNAME=your_db_username`
+# 4. Setting Environment Variable
 
 Create a file called .env in the project root and add your database password:
 
 `DB_PASSWORD=your_db_password`
 
-These files should not be uploaded to Github, as they contain sensitive information. Therefore, they should be included in .gitignore.
+This file should not be uploaded to GitHub, as it contains sensitive information. Therefore, it should be included in .gitignore.
 
 # 5. Setting Spring Rest Docs (.adoc files)
 
