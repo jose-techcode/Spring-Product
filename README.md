@@ -11,7 +11,7 @@ The Spring Product is a project that trains CRUD and API RESTful operations with
 - Database: PostgreSQL (18.1+) & PgAdmin (4+)
 - API REST Client: Postman (11.83.2+)
 - Code Versioning: Git (2.53.0+)
-- CI/CD: Github Actions
+- CI: Github Actions
 
 # 3. Clone the Repository
 
@@ -29,7 +29,7 @@ This file should not be uploaded to GitHub, as it contains sensitive information
 
 # 5. Setting Spring Rest Docs (.adoc files)
 
-Run CafeteriaApplicationTests.java and this will generate a folder called target. So, you will can use index.adoc.
+Run ProductApplicationTests.java and this will generate a folder called target. So, you will can use index.adoc.
 
 # 6. Contribution
 
