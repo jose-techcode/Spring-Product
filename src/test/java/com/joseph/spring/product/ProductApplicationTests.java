@@ -40,7 +40,6 @@ public class ProductApplicationTests {
     @BeforeAll
     public static void Database_Environment_Variable() {
         Dotenv dotenv = Dotenv.load();
-        System.setProperty("DB_USERNAME", dotenv.get("DB_USERNAME"));
         System.setProperty("DB_PASSWORD", dotenv.get("DB_PASSWORD"));
     }
 
@@ -79,7 +78,7 @@ public class ProductApplicationTests {
         Assertions.assertEquals(2, foundProducts.size());
 
         mockMvc.perform(get("/product")
-                .contentType(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andDo(document("product-GetAll"));
     }
@@ -99,7 +98,7 @@ public class ProductApplicationTests {
         Assertions.assertEquals("Coffee", foundProduct.getProduct());
 
         mockMvc.perform(get("/product/1")
-                .contentType(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andDo(document("product-GetById"));
     }
