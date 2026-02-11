@@ -9,7 +9,7 @@ The Spring Product is a project that trains CRUD and API RESTful operations with
 - Frameworks: Spring Boot (4.0.2+) & JUnit (6+)
 - Library: Mockito (5.21.0+)
 - Database: PostgreSQL (18.1+) & PgAdmin (4+)
-- API REST Client: Postman (11.83.2+)
+- REST API Client: Postman (11.83.2+)
 - Code Versioning: Git (2.53.0+)
 - CI: Github Actions
 
