@@ -5,10 +5,10 @@ The Spring Product is a project that trains CRUD and API RESTful operations with
 # 2. Technologies
 
 - Language: Java (25+)
-- Dependency Manager: Maven (3.9+)
-- Frameworks: Spring Boot (4.0.2+) & JUnit (6+)
+- Dependency Manager: Maven (3.9.12+)
+- Frameworks: Spring Boot with JPA/Hibernate (4.0.2+) & JUnit (6.0.2+)
 - Library: Mockito (5.21.0+)
-- Database: PostgreSQL (18.1+) & PgAdmin (4+)
+- Database: PostgreSQL (18.1+) with PgAdmin (4+)
 - REST API Client: Postman (11.83.2+)
 - Code Versioning: Git (2.53.0+)
 - CI: Github Actions
