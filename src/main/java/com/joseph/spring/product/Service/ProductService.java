@@ -21,8 +21,8 @@ public class ProductService {
     }
 
     public Product getById(Long id) {
-        Optional<Product> cafeteria = productRepository.findById(id);
-        return cafeteria.orElse(null);
+        Optional<Product> product = productRepository.findById(id);
+        return product.orElse(null);
     }
 
     public Product create(Product product) {
