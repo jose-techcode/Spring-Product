@@ -11,6 +11,7 @@ The Spring Product is a project that trains CRUD and API RESTful operations with
 - Database: PostgreSQL (18.1+) with PgAdmin (4+)
 - REST API Client: Postman (11.83.2+)
 - Code Versioning: Git (2.53.0+)
+- Native Compilation: GraalVM (25+)
 - CI: Github Actions
 
 # 3. Clone the Repository
@@ -31,10 +32,24 @@ This file should not be uploaded to GitHub, as it contains sensitive information
 
 Run ProductApplicationTests.java and this will generate a folder called target. So, you will can use index.adoc.
 
-# 6. Contribution
+# 6. Setting GraalVM
+
+- To clean up the target folder and compile the source code for target, run this command:
+
+`mvn clean package`
+
+- After you clean up the target and compile the source code for the target, do the native compilation:
+
+`./mvnw -Pnative native:compile -DskipTests`
+
+- Run the native version:
+
+`./target/Spring-Product`
+
+# 7. Contribution
 
 Feel free to open Issues or submit Pull Requests.
 
-# 7. License
+# 8. License
 
 This project is licensed under the AGPL license.
