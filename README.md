@@ -10,6 +10,7 @@ The Spring Product is a project that trains CRUD and API RESTful operations with
 - Library: Mockito (5.21.0+)
 - Database: PostgreSQL (18.1+) with PgAdmin (4+)
 - REST API Client: Postman (11.83.2+)
+- GraphQL API Client: GraphiQL (5.2.2+)
 - Code Versioning: Git (2.53.0+)
 - Native Compilation: GraalVM (25+)
 - CI: Github Actions
