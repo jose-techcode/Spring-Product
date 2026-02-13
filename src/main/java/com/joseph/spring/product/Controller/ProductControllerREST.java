@@ -9,11 +9,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("product")
-public class ProductController {
+public class ProductControllerREST {
 
     private final ProductService productService;
 
-    public ProductController(ProductService productService) {
+    public ProductControllerREST(ProductService productService) {
         this.productService = productService;
     }
 
