@@ -30,7 +30,7 @@ This file should not be uploaded to GitHub, as it contains sensitive information
 
 # 5. Setting Spring Rest Docs (.adoc files)
 
-Run ProductApplicationTests.java and this will generate a folder called generated-snippets inside the destination folder. You can then use index.adoc.
+Run ProductApplicationTests.java and this will generate a folder called generated-snippets inside the target folder. You can then use index.adoc.
 
 # 6. Setting GraalVM
 
