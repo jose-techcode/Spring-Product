@@ -1,6 +1,6 @@
 # 1. Spring-Product
 
-The Spring Product is a project that trains CRUD and API RESTful operations with Spring Boot on a database.
+The Spring Product is a project that trains CRUD operations with Spring Boot on a database.
 
 # 2. Technologies
 
