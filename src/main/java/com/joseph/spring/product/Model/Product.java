@@ -18,7 +18,7 @@ public class Product {
     @NotBlank
     private String product;
 
-    @DecimalMin(value = "0.0")
+    @DecimalMin(value = "0.1")
     private BigDecimal price;
 
     @Min(value = 1)
