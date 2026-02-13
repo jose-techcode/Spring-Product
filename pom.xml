@@ -130,6 +130,10 @@
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</path>
+						<path>
+							<groupId>org.springframework.boot</groupId>
+							<artifactId>spring-boot-configuration-processor</artifactId>
+						</path>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
@@ -156,7 +160,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- It only serves to suppress warnings of mockito library
+			<!-- It only serves to suppress warnings of mockito library, but break mvn clean package command
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
