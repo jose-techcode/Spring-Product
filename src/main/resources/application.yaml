@@ -13,3 +13,5 @@ spring:
     graphiql:
       enabled:
         true
+  kafka:
+    bootstrap-servers: localhost:9092
