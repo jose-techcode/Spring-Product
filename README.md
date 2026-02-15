@@ -1,6 +1,6 @@
 # 1. Spring-Product
 
-The Spring Product is a project that trains CRUD operations with Spring Boot on a database.
+The Spring Product is a project that trains CRUD, REST and GraphQL operations with Spring Boot.
 
 # 2. Technologies
 
@@ -30,11 +30,7 @@ Create a file called .env in the project root and add your database password:
 
 This file should not be uploaded to GitHub, as it contains sensitive information. Therefore, it should be included in .gitignore.
 
-# 5. Setting Spring Rest Docs (.adoc files)
-
-Run ProductApplicationTests.java and this will generate a folder called generated-snippets inside the target folder. You can then use index.adoc.
-
-# 6. Setting GraalVM
+# 5. Setting GraalVM
 
 - To clean up the target folder and compile the source code for target, run this command:
 
@@ -48,10 +44,14 @@ Run ProductApplicationTests.java and this will generate a folder called generate
 
 `./target/Spring-Product`
 
-# 7. Contribution
+# 6. Contribution
 
 Feel free to open Issues or submit Pull Requests.
 
-# 8. License
+# 7. License
 
 This project is licensed under the AGPL license.
+
+# 8. Notes
+
+For GraalVM, PostgreSQL, and Apache Kafka to work, you need to configure both on your machine.
