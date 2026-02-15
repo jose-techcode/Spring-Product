@@ -30,7 +30,7 @@ Create a file called .env in the project root and add your database password:
 
 This file should not be uploaded to GitHub, as it contains sensitive information. Therefore, it should be included in .gitignore.
 
-# 5. Setting GraalVM
+# 5. Setting GraalVM (Need fix!)
 
 - To clean up the target folder and compile the source code for target, run this command:
 
@@ -54,4 +54,4 @@ This project is licensed under the AGPL license.
 
 # 8. Notes
 
-For GraalVM, PostgreSQL, and Apache Kafka to work, you need to configure both on your machine.
+For GraalVM, PostgreSQL, and Apache Kafka to work, you need to configure both on your machine
