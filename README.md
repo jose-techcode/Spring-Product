@@ -12,6 +12,7 @@ The Spring Product is a project that trains CRUD operations with Spring Boot on 
 - REST API Client: Postman (11.83.2+)
 - GraphQL API Client: GraphiQL (5.2.2+)
 - Code Versioning: Git (2.53.0+)
+- Messenger: Apache Kafka (4.0.0+)
 - Native Compilation: GraalVM (25+)
 - CI: Github Actions
 
