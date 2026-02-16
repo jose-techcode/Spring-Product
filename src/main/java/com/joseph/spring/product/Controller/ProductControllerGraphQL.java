@@ -2,7 +2,6 @@ package com.joseph.spring.product.Controller;
 
 import com.joseph.spring.product.Model.Product;
 import com.joseph.spring.product.Service.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
@@ -13,8 +12,11 @@ import java.util.List;
 @Controller
 public class ProductControllerGraphQL {
 
-    @Autowired
-    private ProductService productService;
+    private final ProductService productService;
+
+    public ProductControllerGraphQL(ProductService productService) {
+        this.productService = productService;
+    }
 
     @QueryMapping
     public List<Product> getAll() {
