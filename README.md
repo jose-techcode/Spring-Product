@@ -14,6 +14,7 @@ The Spring Product is a project that trains CRUD, REST and GraphQL operations wi
 - Code Versioning: Git (2.53.0+)
 - Messenger: Apache Kafka (4.0.0+)
 - Native Compilation: GraalVM (25+)
+- Containerization: Docker (29.2.1+)
 - CI: Github Actions
 
 # 3. Clone the Repository
@@ -30,7 +31,7 @@ Create a file called .env in the project root and add your database password:
 
 This file should not be uploaded to GitHub, as it contains sensitive information. Therefore, it should be included in .gitignore.
 
-# 5. Setting GraalVM (Branch: Native)
+# 5. Setting GraalVM (Branch: native)
 
 - To clean up the target folder and compile the source code for target, run this command:
 
@@ -54,4 +55,4 @@ This project is licensed under the AGPL license.
 
 # 8. Notes
 
-For GraalVM, PostgreSQL, and Apache Kafka to work, you need to configure both on your machine.
+For GraalVM, PostgreSQL, and Apache Kafka to work, you need to configure both on your machine or use Docker (with Docker there is no Apache Kafka). If you want to run the application without kafka, use the native branch.
