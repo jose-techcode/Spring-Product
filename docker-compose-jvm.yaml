@@ -2,7 +2,6 @@ services:
 
   app:
     container_name: app
-    image: spring-product-app:latest
     build:
       context: .
       dockerfile: src/main/docker/Dockerfile.jvm
