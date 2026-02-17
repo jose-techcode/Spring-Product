@@ -1,0 +1,11 @@
+FROM alpine:latest
+
+RUN apk add --no-cache libc6-compat
+
+WORKDIR /app
+
+COPY target/Spring-Product /app/Spring-Product
+
+COPY .env ./
+
+ENTRYPOINT ["./Spring-Product"]
