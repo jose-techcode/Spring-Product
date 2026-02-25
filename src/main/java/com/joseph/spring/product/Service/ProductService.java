@@ -2,6 +2,9 @@ package com.joseph.spring.product.Service;
 
 import com.joseph.spring.product.Model.Product;
 import com.joseph.spring.product.Repository.ProductRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
@@ -24,11 +27,13 @@ public class ProductService {
         return productRepository.findAll();
     }
 
+    @Cacheable(value = "PRODUCT_CACHE", key = "#id", unless = "#result == null")
     public Product getById(Long id) {
         Optional<Product> product = productRepository.findById(id);
         return product.orElse(null);
     }
 
+    @CachePut(value = "PRODUCT_CACHE", key = "#result.id", unless = "#result == null")
     public Product create(Product product) {
         Product createdProduct = productRepository.save(product);
         kafkaTemplate.send("product", "Created product with ID: " + createdProduct.getId());
@@ -38,15 +43,18 @@ public class ProductService {
         return createdProduct;
     }
 
-    public void update(Long id, Product product) {
+    @CachePut(value = "PRODUCT_CACHE", key = "#result.id", unless = "#result == null")
+    public Product update(Long id, Product product) {
         product.setId(id);
-        productRepository.save(product);
+        Product updatedProduct = productRepository.save(product);
         kafkaTemplate.send("product", "Updated product with ID: " + product.getId());
         kafkaTemplate.send("product", "Updated product with name: " + product.getProduct());
         kafkaTemplate.send("product", "Updated product with price: " + product.getPrice());
         kafkaTemplate.send("product", "Updated product with quantity: " + product.getQuantity());
+        return updatedProduct;
     }
 
+    @CacheEvict(value = "PRODUCT_CACHE", key = "#id")
     public void delete(Long id) {
         productRepository.deleteById(id);
         kafkaTemplate.send("product", "Deleted product with ID: " + id);
