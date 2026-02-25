@@ -1,15 +1,24 @@
 package com.joseph.spring.product.Model;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Data // @Getter, @Setter, @ToString, @EqualsAndHashCode and @RequiredArgsConstructor
 @Entity
 @Table(name = "product_table")
-public class Product {
+@JsonSerialize
+@JsonDeserialize
+public class Product implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
