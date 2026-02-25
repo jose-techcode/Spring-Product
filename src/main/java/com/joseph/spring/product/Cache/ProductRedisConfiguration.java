@@ -17,7 +17,7 @@ public class ProductRedisConfiguration {
     RedisCacheManager cacheManager(RedisConnectionFactory connectionFactory) {
 
         RedisCacheConfiguration defaults = RedisCacheConfiguration.defaultCacheConfig()
-                .entryTtl(Duration.ofMinutes(5))
+                .entryTtl(Duration.ofMinutes(1))
                 .enableTimeToIdle()
                 .disableCachingNullValues();
 
