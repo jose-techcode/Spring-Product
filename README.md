@@ -1,3 +1,11 @@
+# System Design: main
+
+![System Design main](assets/System-Design-main.png)
+
+# System Design: native
+
+![System Design native](assets/System-Design-native.png)
+
 # 1. Spring-Product
 
 The Spring Product is a project that trains CRUD, REST and GraphQL operations with Spring Boot.
@@ -9,13 +17,14 @@ The Spring Product is a project that trains CRUD, REST and GraphQL operations wi
 - Frameworks: Spring Boot with JPA/Hibernate (4.0.2+) & JUnit (6.0.2+)
 - Library: Mockito (5.21.0+)
 - Database: PostgreSQL (18.1+) with PgAdmin (4+)
+- Cache: Redis (8.6.1+)
 - REST API Client: Postman (11.83.2+)
 - GraphQL API Client: GraphiQL (5.2.2+)
 - Code Versioning: Git (2.53.0+)
-- Messenger: Apache Kafka (4.1.1+)
+- Messenger: Kafka (4.1.1+)
 - Native Compilation: GraalVM (25+)
 - Containerization: Docker (29.2.1+)
-- CI: Github Actions
+- CI: GitHub Actions
 
 # 3. Clone the Repository
 
@@ -55,4 +64,4 @@ This project is licensed under the AGPL license.
 
 # 8. Notes
 
-For GraalVM, PostgreSQL, and Apache Kafka to work, you need to configure both on your machine or use Docker (with Docker there is no Apache Kafka). If you want to run the application without kafka, use the native branch.
+For GraalVM, PostgreSQL, Redis, and Kafka to work, you need to configure both on your machine or use docker-compose-jvm.yaml. To use the application without Redis and Kafka, use the branch native or docker-compose-native.yaml. In the future, Kafka will be added to docker-compose-jvm.yaml.
