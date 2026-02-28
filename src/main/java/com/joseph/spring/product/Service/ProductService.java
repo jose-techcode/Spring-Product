@@ -14,6 +14,8 @@ import java.util.Optional;
 @Service
 public class ProductService {
 
+    public static final String PRODUCT_CACHE = "Products";
+
     private final ProductRepository productRepository;
 
     private final KafkaTemplate<String, String> kafkaTemplate;
@@ -27,13 +29,13 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    @Cacheable(value = "PRODUCT_CACHE", key = "#id", unless = "#result == null")
+    @Cacheable(value = PRODUCT_CACHE, key = "#id", unless = "#result == null")
     public Product getById(Long id) {
         Optional<Product> product = productRepository.findById(id);
         return product.orElse(null);
     }
 
-    @CachePut(value = "PRODUCT_CACHE", key = "#result.id", unless = "#result == null")
+    @CachePut(value = PRODUCT_CACHE, key = "#result.id", unless = "#result == null")
     public Product create(Product product) {
         Product createdProduct = productRepository.save(product);
         kafkaTemplate.send("product", "Created product with ID: " + createdProduct.getId());
@@ -43,7 +45,7 @@ public class ProductService {
         return createdProduct;
     }
 
-    @CachePut(value = "PRODUCT_CACHE", key = "#result.id", unless = "#result == null")
+    @CachePut(value = PRODUCT_CACHE, key = "#result.id", unless = "#result == null")
     public Product update(Long id, Product product) {
         product.setId(id);
         Product updatedProduct = productRepository.save(product);
@@ -54,7 +56,7 @@ public class ProductService {
         return updatedProduct;
     }
 
-    @CacheEvict(value = "PRODUCT_CACHE", key = "#id")
+    @CacheEvict(value = PRODUCT_CACHE, key = "#id")
     public void delete(Long id) {
         productRepository.deleteById(id);
         kafkaTemplate.send("product", "Deleted product with ID: " + id);
