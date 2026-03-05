@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${isEdit} ? 'Edit Product' : 'Add Product'"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 th:text="${isEdit} ? 'Edit Product' : 'Add Product'"></h1>
+
+            <form th:action="@{/product/view}" th:object="${product}" method="post" novalidate>
+                <input type="hidden" th:field="*{id}" />
+
+                <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger">
+                    <ul>
+                        <li th:each="error : ${#fields.errors('*')}" th:text="${error}"></li>
+                    </ul>
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Product:</label>
+                    <input type="text" id="product" th:field="*{product}" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" th:field="*{price}" class="form-control" step="0.01" min="0.1" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" th:field="*{quantity}" class="form-control" min="1" required />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save</button>
+                <a th:href="@{/product/view}" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
