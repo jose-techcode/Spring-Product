@@ -1,4 +1,4 @@
-package com.joseph.spring.product.Messenger;
+package com.joseph.spring.product.Config.Kafka;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;

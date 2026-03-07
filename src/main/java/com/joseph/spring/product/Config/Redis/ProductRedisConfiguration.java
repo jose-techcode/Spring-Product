@@ -1,4 +1,4 @@
-package com.joseph.spring.product.Cache;
+package com.joseph.spring.product.Config.Redis;
 
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
