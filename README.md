@@ -6,9 +6,9 @@
 
 ![System Design native](assets/System-Design-native.png)
 
-# 1. Spring-Product
+# 1. Spring Product
 
-The Spring Product is a project that trains CRUD, REST and GraphQL operations with Spring Boot.
+The Spring Product is a project that trains CRUD, REST, and GraphQL operations with Spring Boot, as well as testing, caching, and messaging.
 
 # 2. Technologies
 
