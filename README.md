@@ -45,7 +45,7 @@ Create a file called .env in the project root and add your database password:
 
 This file should not be uploaded to GitHub, as it contains sensitive information. Therefore, it should be included in .gitignore.
 
-# 5. Setting GraalVM (Branches: native and soap)
+# 5. Setting GraalVM (Branch: native)
 
 - To clean up the target folder and compile the source code for target, run this command:
 
