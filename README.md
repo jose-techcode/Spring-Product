@@ -12,7 +12,7 @@
 
 # 1. Spring Product
 
-The Spring Product is a project that trains CRUD, REST, GraphQL and SOAP operations with Spring Boot, as well as testing, caching, and messaging.
+The Spring Product is a project that trains CRUD, REST, GraphQL and SOAP with Spring Boot, as well as testing, caching, and messaging.
 
 # 2. Technologies
 
@@ -45,7 +45,7 @@ Create a file called .env in the project root and add your database password:
 
 This file should not be uploaded to GitHub, as it contains sensitive information. Therefore, it should be included in .gitignore.
 
-# 5. Setting GraalVM (Branch: native)
+# 5. Setting Native Image With GraalVM (Branch: native)
 
 - To clean up the target folder and compile the source code for target, run this command:
 
@@ -59,14 +59,20 @@ This file should not be uploaded to GitHub, as it contains sensitive information
 
 `./target/Spring-Product`
 
-# 6. Contribution
+# 6. Running SOAP Application (Branch: soap)
+
+- Run the soap branch application and test it with this command:
+
+`curl --header "Content-Type: text/xml" -d @request.xml http://localhost:8080/services | xmllint --format -`
+
+# 7. Contribution
 
 Feel free to open Issues or submit Pull Requests.
 
-# 7. License
+# 8. License
 
 This project is licensed under the AGPL license.
 
-# 8. Notes
+# 9. Notes
 
-For PostgreSQL, Redis, and Kafka to work, you need to configure both on your machine or use docker-compose-jvm.yaml. To use the application without Redis and Kafka, use the branch native or docker-compose-native.yaml. This project don't use Spring Security. Much of this project is for learning purposes.
+For PostgreSQL, Redis, and Kafka to work, you need to configure both on your machine or use docker-compose-jvm.yaml. To use the application without Redis and Kafka, use the native branch or docker-compose-native.yaml. This project don't use Spring Security. Much of this project is for learning purposes.
