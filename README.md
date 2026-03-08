@@ -64,4 +64,4 @@ This project is licensed under the AGPL license.
 
 # 8. Notes
 
-For GraalVM, PostgreSQL, Redis, and Kafka to work, you need to configure both on your machine or use docker-compose-jvm.yaml. To use the application without Redis and Kafka, use the branch native or docker-compose-native.yaml. This project don't use Spring Security. Much of this project is for learning purposes.
+For PostgreSQL, Redis, and Kafka to work, you need to configure both on your machine or use docker-compose-jvm.yaml. To use the application without Redis and Kafka, use the branch native or docker-compose-native.yaml. This project don't use Spring Security. Much of this project is for learning purposes.
