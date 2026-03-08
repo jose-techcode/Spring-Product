@@ -6,9 +6,13 @@
 
 ![System Design native](assets/System-Design-native.png)
 
+# System Design: soap
+
+![System Design soap](assets/System-Design-soap.png)
+
 # 1. Spring Product
 
-The Spring Product is a project that trains CRUD, REST, and GraphQL operations with Spring Boot, as well as testing, caching, and messaging.
+The Spring Product is a project that trains CRUD, REST, GraphQL and SOAP operations with Spring Boot, as well as testing, caching, and messaging.
 
 # 2. Technologies
 
@@ -20,6 +24,7 @@ The Spring Product is a project that trains CRUD, REST, and GraphQL operations w
 - Cache: Redis (8.6.1+)
 - REST API Client: Postman (11.83.2+)
 - GraphQL API Client: GraphiQL (5.2.2+)
+- REST/GraphQL/SOAP API Client: cURL (8.15.0+)
 - Code Versioning: Git (2.53.0+)
 - Messenger: Kafka (4.1.1+)
 - Native Compilation: GraalVM (25+)
@@ -40,7 +45,7 @@ Create a file called .env in the project root and add your database password:
 
 This file should not be uploaded to GitHub, as it contains sensitive information. Therefore, it should be included in .gitignore.
 
-# 5. Setting GraalVM (Branch: native)
+# 5. Setting GraalVM (Branches: native and soap)
 
 - To clean up the target folder and compile the source code for target, run this command:
 
