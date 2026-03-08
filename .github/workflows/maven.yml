@@ -18,10 +18,12 @@ on:
     branches:
       - main
       - native
+      - soap
   pull_request:
     branches:
       - main
       - native
+      - soap
 
 jobs:
   build:
