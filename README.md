@@ -29,6 +29,7 @@ The Spring Product is a project that trains CRUD, REST, GraphQL and SOAP with Sp
 - Messenger: Kafka (4.1.1+)
 - Native Compilation: GraalVM (25+)
 - Containerization: Docker (29.2.1+)
+- Scanner: Trivy (0.69.1+)
 - CI: GitHub Actions
 
 # 3. Clone the Repository
