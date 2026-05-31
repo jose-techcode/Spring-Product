@@ -36,7 +36,7 @@
 
 - Bash
 
-`git clone https://github.com/jose-techcode/Spring-Product`
+`git clone https://github.com/josewalter01/Spring-Product`
 
 # 4. Setting Environment Variable
 
