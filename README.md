@@ -12,7 +12,7 @@
 
 # 1. Spring Product
 
-The Spring Product is a project that trains CRUD, REST, GraphQL and SOAP with Spring Boot, as well as testing, caching, and messaging.
+[DEPRECATED] The Spring Product is a project that trains CRUD, REST, GraphQL and SOAP with Spring Boot, as well as testing, caching, and messaging.
 
 # 2. Technologies
 
